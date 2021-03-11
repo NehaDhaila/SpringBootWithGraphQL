@@ -1,0 +1,16 @@
+schema{
+query: Query
+}
+
+type Query{
+getAllPerson : [PersonEntity]               #from getAllPerson() I want the List of All Person.
+findPerson(email: String) : PersonEntity    #from getAllPerson(),I wanna pass email,to get data.
+}
+
+type PersonEntity{                          #Entity Class, and their DM with DT
+id: String
+name: String
+mobile: String
+email: String
+address: [String]
+}
