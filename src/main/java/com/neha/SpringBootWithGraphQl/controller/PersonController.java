@@ -76,10 +76,11 @@ public class PersonController {
         personRepository.saveAll(persons);
         return ""+persons.size();
     }
-    @GetMapping("/findAllPersons")
+    @GetMapping("/findAllPersonss")
     public List<PersonEntity> findAllPersons() {
         return (List<PersonEntity>)personRepository.findAll();
     }
     }
+
 
 //commenting for checking github commit
