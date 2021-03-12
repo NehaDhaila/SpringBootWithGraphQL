@@ -73,7 +73,6 @@ public class PersonController {
     public String addPerson(@RequestBody List<PersonEntity> persons){
         System.out.println(">> "+persons);
         //personRepository.save(persons);
-        System.out.println("cccccccccccccccccccccccccccccccccccccccc");
         personRepository.saveAll(persons);
         return ""+persons.size();
     }
